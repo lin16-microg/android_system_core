@@ -145,10 +145,6 @@ on init
     write /proc/sys/net/ipv4/conf/all/accept_redirects 0
     write /proc/sys/net/ipv6/conf/all/accept_redirects 0
 
-    # IPv6 Privacy Extensions
-    write /proc/sys/net/ipv6/conf/all/use_tempaddr 2
-    write /proc/sys/net/ipv6/conf/default/use_tempaddr 2
-
     # /proc/net/fib_trie leaks interface IP addresses
     chmod 0400 /proc/net/fib_trie
 
